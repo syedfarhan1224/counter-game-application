@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  font-family: inherit;
+}
+
+html,
+body {
+  height: 100vh;
+  user-select: none; /* Block user selection */
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3; /* Light gray background */
+}
+
+.container {
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.counter {
+  font-size: 3rem;
+  background-color: #00bb00;
+  padding: 10px 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+.even-odd {
+  font-size: 1.5rem;
+  color: #00bb00;
+  margin-left: 0.5rem;
+}
+
+.button-container {
+  display: flex;
+}
+
+.ball-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.ball {
+  background-color: rgb(204, 67, 231);
+  /* all: unset; */
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6em 2em;
+  border-radius: 5px;
+  border-color: #333;
+  margin-bottom: 5px;
+  /* color: #fff; */
+  font-size: 1.5em;
+  font-weight: 600;
+  /* cursor: pointer; */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6em 2em;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.increment-button {
+  background-color: #01aa01; /* Green increment button */
+  border: 2px solid #01aa01;
+}
+
+.decrement-button {
+  background-color: #f82720; /* Red decrement button */
+  border: 2px solid #f82720;
+}
+
+.reset-button {
+  background-color: #14afe2; /* Light blue reset button */
+  border: 2px solid #14afe2 ;
+}
+
+.button:hover {
+  filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+.history {
+  margin-top: 30px;
+}
+
+.history-item {
+  margin-bottom: 5px;
+}
